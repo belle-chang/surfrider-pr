@@ -81,10 +81,21 @@ WSGI_APPLICATION = 'surfrider.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ddbumr814it8gi',
+        'USER': 'yqochktghwhocu',
+        'PASSWORD': '0def91a3d970c4204418123c0b964d06800fc5d14e1995fe4d59eb7caac4fdfd',
+        'HOST': 'ec2-23-21-160-38.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
