@@ -21,5 +21,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('<int:beach_id>/', include('testing.urls')),
     path('stats/<int:beach_id>', views.see_stats, name='see_stats'),
+    path('clear_db/', views.clear_db, name='clear_db'),
     path('admin/', admin.site.urls),
 ]

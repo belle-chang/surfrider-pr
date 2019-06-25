@@ -4,8 +4,20 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
     /*background-color: royalblue !important;*/
 }
+.titlehead {
+    font-weight: bolder;
+}
+.beach_names {
+    color: white;
+}
+.beach_names:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 
 /*.container{*/
     /*text-decoration: none;*/
@@ -30,4 +42,16 @@ a.link:hover {
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     color: pink;
+}
+
+.delete{
+    color: black;
+    border: none;
+    background-color: #eee;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+.delete:hover{
+    border: 1px solid #888;
+    background-color: #ddd;
 }

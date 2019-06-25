@@ -42,28 +42,34 @@
 
 
 {% block content %}
-<body>
+<body style="background-color: #6dc3d7">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG76TDM"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="container">
     <main>
-        <h1>Statistics</h1>
+        <h1 class="titlehead">Statistics</h1>
         <p>
             {% for key, values in beach_dict.items %}
             {% for k, v in beach_ids.items %}
             {% if k == key %}
-            <a onclick="location.href='{% url 'see_stats' v %}'" class="buttons">{{ key }}</a>:
+            <a onclick="location.href='{% url 'see_stats' v %}'" class="beach_names">{{ key }}</a>:
             {% endif %}
             {% endfor %}
             {{values}}
             <br>
             {% endfor %}
         </p>
+        <br>
+        <button action="{% url 'clear_db' %}" class="delete" title="WARNING: action cannot be undone!" form="delete" type="submit">
+            Clear statistics
+        </button>
     </main>
 
 </div>
+
+
 
 </body>
 {% endblock %}
