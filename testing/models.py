@@ -11,4 +11,6 @@ class Beach(models.Model):
 class BeachNameID(models.Model):
     beach_name = models.CharField(max_length=200)
     beach_id = models.IntegerField(default=0)
+    def __str__(self):
+        return '%s %d' % (self.beach_name, self.beach_id)
 

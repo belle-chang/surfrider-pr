@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
 from .models import BeachNameID, Beach
 import datetime
+
 # Create your views here.
 def reroute_to_surfrider(request, beach_id):
+    if beach_id == 666:
+        return redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     url = "https://www.surfrider.org/blue-water-task-force/beach/" + str(beach_id)
     print(str(beach_id))
     beach_obj = BeachNameID.objects.get(beach_id=beach_id)

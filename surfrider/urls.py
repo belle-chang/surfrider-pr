@@ -19,6 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('<int:beach_id>', include('testing.urls'), name="reroute_to_surfrider"),
+    path('<int:beach_id>/', include('testing.urls')),
     path('admin/', admin.site.urls),
 ]
