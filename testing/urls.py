@@ -14,11 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from surfrider import views
+from testing import views
 from django.urls import path, include
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('<int:beach_id>', include('testing.urls'), name="reroute_to_surfrider"),
-    path('admin/', admin.site.urls),
+    path('', views.reroute_to_surfrider, name="reroute_to_surfrider"),
 ]
