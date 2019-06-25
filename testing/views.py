@@ -6,7 +6,7 @@ import datetime
 def reroute_to_surfrider(request, beach_id):
     if beach_id == 666:
         return redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-    url = "https://www.surfrider.org/blue-water-task-force/beach/" + str(beach_id[:3])
+    url = "https://www.surfrider.org/blue-water-task-force/beach/" + str(beach_id[:-1])
     print(str(beach_id))
     beach_obj = BeachNameID.objects.get(beach_id=beach_id)
     beach_name = beach_obj.beach_name
