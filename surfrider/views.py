@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect, render_to_response
 from testing.models import BeachNameID, Beach
+from django.contrib.auth.decorators import login_required
 import datetime
 
 
 # Create your views here.
+
+@login_required
 def index(request):
     # if request.user.is_authenticated:
     #     return render(request, 'home.html')
@@ -18,6 +21,7 @@ def index(request):
     # {'beach_dict' : beach_dictionary}
     return render(request, 'welcome.html', {'beach_dict': beach_dictionary, 'beach_ids' : beach_ids})
 
+@login_required
 def see_stats(request, beach_id):
     current_beach = BeachNameID.objects.get(beach_id=beach_id)
     err_msg = ""
