@@ -20,10 +20,13 @@ def index(request):
 
 def see_stats(request, beach_id):
     current_beach = BeachNameID.objects.get(beach_id=beach_id)
+    err_msg = ""
     beach_name = current_beach.beach_name
     current_stats = Beach.objects.filter(beach_name=beach_name).order_by('-date_visited').values()
+    if current_stats.count() == 0:
+        err_msg = "Sorry, no data to show at this time!"
     print(current_stats)
-    return render(request, 'stats.html', {'stats': current_stats})
+    return render(request, 'stats.html', {'stats': current_stats, 'err_msg': err_msg})
 
 # def reroute_to_surfrider(request, beach_id):
 #     url = "https://www.surfrider.org/blue-water-task-force/beach/" + beach_id

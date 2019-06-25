@@ -50,9 +50,9 @@
 <div class="container">
     <main>
         <h1>Statistics</h1>
-        <p>
+        {{err_msg}}
             {% for stat in stats %}
-            {{stat.beach_name}}:{{stat.date_visited}}
+            {{stat.beach_name}}:      {{stat.date_visited}}
             <br>
             {% endfor %}
         </p>
