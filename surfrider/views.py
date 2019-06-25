@@ -28,9 +28,9 @@ def see_stats(request, beach_id):
     print(current_stats)
     return render(request, 'stats.html', {'stats': current_stats, 'err_msg': err_msg})
 
-def clear_db(request):
-    Beach.objects.all().delete()
-    return index(request)
+# def clear_db(request):
+#     Beach.objects.all().delete()
+#     return index(request)
 
 # def reroute_to_surfrider(request, beach_id):
 #     url = "https://www.surfrider.org/blue-water-task-force/beach/" + beach_id
