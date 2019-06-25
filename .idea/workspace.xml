@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de964f46-3aca-4423-9cd2-bca44ff810ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/surfrider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/surfrider/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/surfrider/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/surfrider/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/surfrider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="86" column="85" selection-start-line="86" selection-start-column="85" selection-end-line="86" selection-end-column="85" />
+            <state relative-caret-position="1263">
+              <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -30,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/surfrider/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
               </folding>
@@ -63,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/templates/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="337">
-              <caret line="55" column="28" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="55" selection-end-column="28" />
+              <caret line="55" column="24" selection-start-line="53" selection-start-column="12" selection-end-line="55" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -114,6 +116,7 @@
       <find>static</find>
       <find>installed</find>
       <find>white</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,10 +130,10 @@
         <option value="$PROJECT_DIR$/text.py" />
         <option value="$PROJECT_DIR$/testing/admin.py" />
         <option value="$PROJECT_DIR$/testing/urls.py" />
-        <option value="$PROJECT_DIR$/surfrider/settings.py" />
         <option value="$PROJECT_DIR$/testing/models.py" />
         <option value="$PROJECT_DIR$/surfrider/urls.py" />
         <option value="$PROJECT_DIR$/testing/views.py" />
+        <option value="$PROJECT_DIR$/surfrider/settings.py" />
         <option value="$PROJECT_DIR$/surfrider/views.py" />
         <option value="$PROJECT_DIR$/templates/welcome.html" />
       </list>
@@ -153,11 +156,6 @@
           <expand>
             <path>
               <item name="surfrider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfrider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surfrider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfrider" type="462c0819:PsiDirectoryNode" />
               <item name="surfrider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -219,18 +217,18 @@
       <option name="presentableId" value="Default" />
       <updated>1561395838779</updated>
       <workItem from="1561395840112" duration="9349000" />
-      <workItem from="1561471601380" duration="3073000" />
+      <workItem from="1561471601380" duration="3483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12422000" />
+    <option name="totallyTimeSpent" value="12832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15665236" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15665236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -337,13 +335,6 @@
     <entry file="file://$PROJECT_DIR$/urls">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/surfrider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="86" column="85" selection-start-line="86" selection-start-column="85" selection-end-line="86" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -381,10 +372,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/surfrider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1263">
+          <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/surfrider/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
           </folding>
@@ -394,7 +392,7 @@
     <entry file="file://$PROJECT_DIR$/templates/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
-          <caret line="55" column="28" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="55" selection-end-column="28" />
+          <caret line="55" column="24" selection-start-line="53" selection-start-column="12" selection-end-line="55" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
