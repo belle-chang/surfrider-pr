@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('', views.index, name='index'),
     path('<int:beach_id>/', include('testing.urls')),
+    path('stats/<int:beach_id>', views.see_stats, name='see_stats'),
     path('admin/', admin.site.urls),
 ]

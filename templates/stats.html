@@ -51,13 +51,8 @@
     <main>
         <h1>Statistics</h1>
         <p>
-            {% for key, values in beach_dict.items %}
-            {% for k, v in beach_ids.items %}
-            {% if k == key %}
-            <a onclick="location.href='{% url 'see_stats' v %}'" class="buttons">{{ key }}</a>:
-            {% endif %}
-            {% endfor %}
-            {{values}}
+            {% for stat in stats %}
+            {{stat.beach_name}}:{{stat.date_visited}}
             <br>
             {% endfor %}
         </p>
