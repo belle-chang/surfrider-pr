@@ -2,12 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-
-
-
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +9,7 @@
 
     <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <title>Anabelle Chang's COS333 Assignment</title>
+    <title>PR Beach Testing Project</title>
     <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     {% load static %}
     <link rel="stylesheet" href="{% static "style.css" %}">
@@ -55,13 +49,11 @@
 <!-- End Google Tag Manager (noscript) -->
 <div class="container">
     <main>
-        <h1>Welcome to Registrar Lite!</h1>
+        <h1>Statistics</h1>
         <p>
-            The latest and greatest in responsive interfaces to
-            <a class="link" href="https://registrar.princeton.edu/course-offerings/">
-                Course Offerings!</a><br/><br/>
-            Just type in a 3-letter department code like COS and optionally a course number,
-            like COS/333 and instantly you'll be transported to another page with all the courses you could ask for.
+            {% for key, values in beach_dict.items %}
+            {{key}}: {{values}}
+            {% endfor %}
         </p>
 
         <form action="#">
