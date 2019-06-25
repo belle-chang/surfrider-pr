@@ -9,10 +9,10 @@ def index(request):
     #     return render(request, 'home.html')
     # # return HttpResponse("welcome.html")
     beach_dictionary = {}
-    all_beaches = Beach.objects.all()
+    all_beaches = BeachNameID.objects.all()
+    print(all_beaches)
     for beach in all_beaches:
-        if BeachNameID.objects.filter(beach_name=beach.beach_name).exists():
-            beach_dictionary[beach.beach_name] = BeachNameID.objects.filter(beach_name=beach.beach_name).count()
+        beach_dictionary[beach.beach_name] = Beach.objects.filter(beach_name=beach.beach_name).count()
     # {'beach_dict' : beach_dictionary}
     return render(request, 'welcome.html', {'beach_dict' : beach_dictionary})
 
