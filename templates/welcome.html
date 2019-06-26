@@ -41,7 +41,7 @@
         <br>
         <br>
 
-        <div class="paragraph" style="font-size: 15px; text-decoration: underline">Click on one of the beach names to see a more detailed view of its statistics!</div>
+        <div class="paragraph" style="font-size: 15px; font-style: italic">Click on one of the beach names to see a more detailed view of its statistics!</div>
     </main>
 
 
@@ -56,24 +56,4 @@
 </footer>
 {% endblock %}
 
-<script type="text/javascript">
-    function docount() {
-        var query = document.getElementById("querycode").value;
-        if (query)
-            window.location.href = "/count/" + query;
-        else
-            window.location.href = "/count"
-    }
-    function doclear() {
-        var query = document.getElementById("querycode").value;
-        if (query)
-            window.location.href = "/clear/" + query;
-        else
-            window.location.href = "/clear"
-    }
-    function dosubmit() {
-        var query = document.getElementById("querycode").value;
-        window.location.href = "/" + query;
-    }
-</script>
 </html>

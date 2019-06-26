@@ -29,8 +29,11 @@ html {
 div.container {
     height: 700px;
     position: relative;
+    width:100%;
 }
 div.container main {
+    width:100%;
+
     margin: 0;
     position: absolute;
     top: 50%;

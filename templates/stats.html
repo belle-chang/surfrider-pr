@@ -24,7 +24,7 @@
 
 {% block content %}
 <body>
-<div class="container">
+<div class="container" style="width: 100%">
     <main>
         <div class="titlehead">Statistics</div>
         <div class="paragraph">
@@ -45,24 +45,4 @@
 </footer>
 {% endblock %}
 
-<script type="text/javascript">
-    function docount() {
-        var query = document.getElementById("querycode").value;
-        if (query)
-            window.location.href = "/count/" + query;
-        else
-            window.location.href = "/count"
-    }
-    function doclear() {
-        var query = document.getElementById("querycode").value;
-        if (query)
-            window.location.href = "/clear/" + query;
-        else
-            window.location.href = "/clear"
-    }
-    function dosubmit() {
-        var query = document.getElementById("querycode").value;
-        window.location.href = "/" + query;
-    }
-</script>
 </html>
