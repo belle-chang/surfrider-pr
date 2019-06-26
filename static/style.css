@@ -8,18 +8,27 @@ html {
     background-repeat: repeat;
     background-position: center;
     background-size: 100%;
-}
-
-main {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 80%;
     color: white;
 
-    /*background-color: royalblue !important;*/
 }
+
+/*main {*/
+    /*position: absolute;*/
+    /*top: 45%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
+    /*width: 80%;*/
+    /*color: white;*/
+
+    /*!*background-color: royalblue !important;*!*/
+/*}*/
 .titlehead {
     font-size: 50px;
     font-weight: bold;
@@ -36,7 +45,60 @@ main {
     font-size: 20px;
     line-height: 30px;
 }
+.backbutton {
+    font-family:  'Work Sans', sans-serif;
+    font-size: 17px;
+    color: #605f58;
+    background-color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    /*color: pink;*/
 
+}
+
+.backbutton:hover {
+    font-family:  'Work Sans', sans-serif;
+    font-size: 17px;
+    color: #605f58;
+    background-color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+    /*color: pink;*/
+}
+
+.button {
+    margin: 20px;
+    width: 140px;
+    height: 45px;
+    font-family:  'Work Sans', sans-serif;
+    font-size: 17px;
+    /*letter-spacing: 2.5px;*/
+    /*font-weight: 500;*/
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #8bbad3;
+    box-shadow: 0px 15px 20px #537182;
+    color: #fff;
+    /*transform: translateY(-7px);*/
+}
 
 /*.container{*/
     /*text-decoration: none;*/
